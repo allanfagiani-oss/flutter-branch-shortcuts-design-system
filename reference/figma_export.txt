@@ -1,0 +1,276 @@
+class Property1Add extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(vertical: 24),
+          clipBehavior: Clip.antiAlias,
+          decoration: ShapeDecoration(
+            color: Colors.white /* colors-background-bg-neutral-primary-soft */,
+            shape: RoundedRectangleBorder(
+              side: BorderSide(
+                width: 1,
+                color: const Color(0xFFF3F4F6) /* colors-border-border-light */,
+              ),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            shadows: [
+              BoxShadow(
+                color: Color(0x0C000000),
+                blurRadius: 6,
+                offset: Offset(0, 4),
+                spreadRadius: 0,
+              )BoxShadow(
+                color: Color(0x19000000),
+                blurRadius: 15,
+                offset: Offset(0, 10),
+                spreadRadius: -3,
+              )
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            spacing: 24,
+            children: [
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  spacing: 12,
+                  children: [
+                    Container(
+                      width: 125,
+                      height: 20,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            child: Text(
+                              'Adicionar todas filiais',
+                              style: TextStyle(
+                                color: const Color(0xFF4A5565) /* colors-text-text-body */,
+                                fontSize: 14,
+                                fontFamily: 'Effra Trial',
+                                fontWeight: FontWeight.w500,
+                                height: 1.43,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  spacing: 12,
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 12,
+                        children: [
+                          SizedBox(
+                            width: 208,
+                            child: Text(
+                              'Monaco (152 clientes)',
+                              style: TextStyle(
+                                color: const Color(0xFF4A5565) /* colors-text-text-body */,
+                                fontSize: 14,
+                                fontFamily: 'Effra Trial',
+                                fontWeight: FontWeight.w500,
+                                height: 1.43,
+                              ),
+                            ),
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            spacing: 8,
+                            children: [
+                              Container(
+                                width: 32,
+                                height: 32,
+                                decoration: ShapeDecoration(
+                                  color: const Color(0xFFF24166) /* colors-background-bg-brand */,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(60),
+                                  ),
+                                  shadows: [
+                                    BoxShadow(
+                                      color: Color(0x051D293D),
+                                      blurRadius: 0.50,
+                                      offset: Offset(0, 1),
+                                      spreadRadius: 0.05,
+                                    )
+                                  ],
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(width: 14, height: 14, child: Stack()),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 12,
+                        children: [
+                          SizedBox(
+                            width: 194,
+                            child: Text(
+                              'Monaco (152 clientes)',
+                              style: TextStyle(
+                                color: const Color(0xFF4A5565) /* colors-text-text-body */,
+                                fontSize: 14,
+                                fontFamily: 'Effra Trial',
+                                fontWeight: FontWeight.w500,
+                                height: 1.43,
+                              ),
+                            ),
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            spacing: 8,
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                decoration: ShapeDecoration(
+                                  color: const Color(0xFFF24166) /* colors-background-bg-brand */,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(60),
+                                  ),
+                                  shadows: [
+                                    BoxShadow(
+                                      color: Color(0x051D293D),
+                                      blurRadius: 0.50,
+                                      offset: Offset(0, 1),
+                                      spreadRadius: 0.05,
+                                    )
+                                  ],
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 6,
+                                  children: [
+                                    Text(
+                                      'Add',
+                                      style: TextStyle(
+                                        color: Colors.white /* colors-text-text-white */,
+                                        fontSize: 12,
+                                        fontFamily: 'Effra Trial',
+                                        fontWeight: FontWeight.w500,
+                                        height: 1.67,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      spacing: 12,
+                      children: [
+                        Text(
+                          'Monaco (152 clientes)',
+                          style: TextStyle(
+                            color: const Color(0xFF4A5565) /* colors-text-text-body */,
+                            fontSize: 14,
+                            fontFamily: 'Effra Trial',
+                            fontWeight: FontWeight.w500,
+                            height: 1.43,
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          spacing: 8,
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: ShapeDecoration(
+                                color: const Color(0xFFF24166) /* colors-background-bg-brand */,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(60),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x051D293D),
+                                    blurRadius: 0.50,
+                                    offset: Offset(0, 1),
+                                    spreadRadius: 0.05,
+                                  )
+                                ],
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 6,
+                                children: [
+                                  Text(
+                                    'Adicionar todos',
+                                    style: TextStyle(
+                                      color: Colors.white /* colors-text-text-white */,
+                                      fontSize: 12,
+                                      fontFamily: 'Effra Trial',
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.67,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
