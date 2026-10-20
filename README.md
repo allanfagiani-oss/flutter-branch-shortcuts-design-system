@@ -20,6 +20,27 @@ A aplicação web é uma **demonstração**, com dados e estado locais; o compon
 
 Na demonstração, é possível testar as variantes **Adicionar** e **Remover**, as ações individuais e coletivas, os estados habilitado/desabilitado e a atualização da contagem de filiais selecionadas.
 
+
+## Do Figma ao Flutter
+
+### 01. Referência original
+
+O componente foi inicialmente projetado no Figma, com variantes e propriedades visuais definidas.
+
+![Referência original no Figma](docs/images/figma-original.png)
+
+### 02. Implementação Flutter
+
+O componente foi reconstruído utilizando Material 3, tokens semânticos, callbacks tipados e estado controlado pelo componente pai.
+
+![Implementação Flutter com seleção ativa](docs/images/flutter-implementation.png)
+
+### 03. Estados de interação
+
+As ações individuais e coletivas são habilitadas ou desabilitadas conforme a seleção atual.
+
+![Flutter com nenhuma filial selecionada](docs/images/interaction-states.png)
+
 ### Referência visual
 
 ![Referência original no Figma](reference/atalhos-figma.png.png)
